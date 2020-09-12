@@ -1,0 +1,66 @@
+/* 头部 */
+.header{
+    width: 1349px;
+    height: 120px;
+    padding:0 32px;
+    background-color: cadetblue;
+}
+/* 版心 */
+.header-cotain{
+    width: 1285px;
+    height: 120px;
+    margin: 0 auto;
+    background-color: aqua;
+}
+/* 头上部 */
+.header-top{
+    width: 1285px;
+    height: 38px;
+    background-color: brown;
+}
+.header-top .h_inform{
+    display: block;
+    width: 560px;
+    height: 19px;
+    /* margin auto无法居中  转成block即可 */
+    float: left;
+
+    margin-left: 300px;
+    padding-top: 10px;
+    line-height: 1;
+    background-color: wheat;
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.85); 
+    font-weight: 600;
+    font-size: 14px;
+}
+.header-top .h_address{
+    width: 106px;
+    height: 38px;
+    background-color: chocolate;
+    float: left;
+    margin-left:1097px;
+    color: rgba(0, 0, 0, 0.65);
+    cursor: pointer;
+    font-size: 14px;
+}
+.header-top .h_address #china{
+    width: 16px;
+    height: 16px;
+}
+.header-top .h_language{
+    width: 82px;
+    height: 38px;
+    background-color: pink;
+    float:left;
+    /* margin-left: 1203px; */
+    color: rgba(0, 0, 0, 0.65);
+    cursor: pointer;
+    font-size: 14px;
+}
+/* 头下部 */
+.header_bottom{
+    width: 1285px;
+  height: 80px;
+    background-color: burlywood;
+}
