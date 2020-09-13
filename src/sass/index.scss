@@ -113,16 +113,22 @@
     list-style: none;
      width: 50px;
      height: 17px;
+     margin-top: 5px;
      margin-right: 10px;
     //  background-color: red;
      font-size: 12px;
     cursor: pointer;
      float: left;
-
+}
+.header_bottom .h_center .h_nav ul li a{
+    color:rgba(0, 0, 0, 0.45);
+}
+.header_bottom .h_center .h_nav ul li a:hover{
+    color:#ff5224;
 }
 //下右部
 .header_bottom .h_right{
-    width: 180px;
+    width: 190px;
     height: 24px;
     padding-left: 30px;
     margin-top: 30px;
@@ -139,7 +145,9 @@
     color: black;
     font-size: 18px;
 }
-
+.header_bottom .h_right a:hover{
+    color: #FF5224;
+}
 
 //内容
 .main{
@@ -175,6 +183,10 @@
     color: rgba(0, 0, 0, 0.85);
     font-size: 16px;
     font-weight: 500;
+}
+
+.main .main_nav li a:hover{
+    color: #FF5224;
 }
 //大图
 .big_img img{
@@ -238,6 +250,11 @@ top: 0;
 bottom: 0;
 margin: auto;
 }
+//鼠标滑过图片变大
+.hot_brand .hot_bottom ul a:hover img{
+    width: 178px;
+    
+}
 // 、、爆品专区
 .hot_zone{
     width: 1285px;
@@ -270,8 +287,23 @@ margin: auto;
    width:185px;
    height: 185px; 
    margin-bottom: 8px;
+   position: relative;
 
 }
+.hot_bottom ul li a .img_content div{
+    position: absolute;
+    width:48px;
+    height: 23px;
+    border-radius: 4px;
+    text-align: center;
+    line-height: 23px;
+    font-size: 12px;
+    background-color: rgba(255,255,255,0.8);
+    top: 162px;
+    left: 0;
+    color: #666;
+ 
+ }
 .hot_bottom ul li a .img_content img{
     width:185px;
     height: 185px; 
@@ -371,7 +403,10 @@ margin-top: 40px;
  .c_left .download{
     font-size: 13px;
  color: rgba(0, 0, 0, 0.65);
- 
+   }
+   .c_left a:hover{
+    color: #FF5224;
+
    }
    //中中
    .brands{
@@ -444,6 +479,11 @@ height: 33px;
         cursor: pointer;
    
     }
+    
+    .c_right a:hover{
+        color: #FF5224;
+    }
+
 //下部
 .footer_bottom{
     width:1236px;
@@ -513,6 +553,116 @@ height: 33px;
         text-align: center;
 
     }
+//侧边栏
+.slide{
+    width: 62px;
+    height: 148px;
+    position: fixed;
+    top:380px;
+    right: 20px;
+}
+.slide .top{
+    width: 60px;
+    height: 60px;
+    color:black;
+    line-height: 60px;
+    text-align: center;
+    font-size: 25px;
+    font-weight: bolder;
+    border-radius: 50%;
 
+}
+.slide .top:hover{
+    color:#FF5224;
+}
+.slide .download{
+       width: 60px;
+    height: 60px;
+    line-height: 60px;
+   background-color:#FF5224 ;
+    margin-top: 15px;
+    color: white;
+    border-radius: 50%;
+    position: relative;
+   
+}
+
+.slide .download .ma{
+    font-size: larger;
+    font-weight: bolder;
+    text-align: center;
+
+}
+
+
+.slide .download .store{
+    width:213px;
+    height: 108px;
+    position: absolute;
+    top: -45px;
+    left: -213px;
+    display: none;
+    // transition: all 5s;
+}
+.slide .download:hover > .store{
+    display:block;
+   }
+.slide .download .s_title{
+    height: 36px;
+    text-align: left;
+line-height: 36px;
+    font-size: 10px;
+    color: rgba(0, 0, 0, 0.65);
+}
+.slide .download .s_left{
+    width: 80px;
+    height: 80px;
+    margin-right: 18px;
+    float: left;
+}
+.slide .download .s_left img{
+    width: 80px;
+    height: 80px;
+}
+.slide .download .right{
+    width: 100px;
+    height: 100px;
+    float: left;
+}
+
+
+.slide .right .stores{
+    width: 100px;
+    height:40px;
+    background-color: black;
+    color: white;
+    font-size: 10px;
+    border-radius: 5px;
+   
+}
+.slide .right .apple{
+    margin-top: 5px;
+    line-height: 20px;
+}
+.slide .right .apple a div{
+    height: 40px;
+    float: left;
+}
+.slide .right .apple a div:first-child{
+    margin-right: 5px;
+}
+.slide .right .android{
+    margin-top: 5px;
+    line-height: 40px;
+
+}
+
+
+.slide .download a{
+    color: white;
+}
+.slide .download a:hover{
+    color: white;
+}
 
 

@@ -22,6 +22,13 @@ function fnImg() {
         .pipe(imagemin())
         .pipe(gulp.dest('./dist/img'));
 }
+// //优化css
+function fnCSS() {
+    return gulp.src('./src/css/*.css')
+        .pipe(cssnano())
+        .pipe(rename({ suffix: '.min' }))
+        .pipe(gulp.dest('./dist/css'));
+}
 //优化scss
 function fnSass() {
     return gulp.src("./src/sass/*.scss")
@@ -43,10 +50,11 @@ function fnCopyIndex2() {
 //监听 
 function fnWatch() {
     gulp.watch('./src/sass/*.scss', fnSass);
-    gulp.watch("./src/js/*.js");
-    gulp.watch("./index.html");
-    gulp.watch('./src/html/*.html');
-    gulp.watch('./src/img/*');
+    gulp.watch("./src/js/*.js", fnJs);
+    gulp.watch("./index.html", fnCopyIndex);
+    gulp.watch('./src/html/*.html', fnCopyIndex2);
+    gulp.watch('./src/img/*', fnImg);
+    gulp.watch('./src/css/*.css', fnCSS);
 }
 
 //导出任务
@@ -55,5 +63,7 @@ exports.sass = fnSass;
 exports.index = fnCopyIndex;
 exports.index2 = fnCopyIndex2;
 exports.img = fnImg;
+exports.CSS = fnCSS;
+
 exports.default = fnWatch;
 
