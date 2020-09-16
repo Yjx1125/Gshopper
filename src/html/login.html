@@ -8,12 +8,13 @@
     <link rel="stylesheet" href="../css/bootstrap.min.css">
     <!-- 表单元素浮动插件 -->
     <!-- bootstrap -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
         integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <!-- material-style input -->
-    <link rel="stylesheet" href="../css/input-material.min.css">
+    material-style input -->
+    <!-- <link rel="stylesheet" href="../css/input-material.min.css"> -->
     <!-- my css -->
     <link rel="stylesheet" href="../css/login.min.css">
+    <!-- 导入jq -->
     <title>登录页</title>
 </head>
 
@@ -26,41 +27,43 @@
             <div class="re">
                 <h2>登录</h2>
                 <!-- 登录方式 -->
-                <div class="methond">
-                    <div class="emails">
-                        邮箱
-                    </div>
-                    <div class="phone">
-                        手机号
-                    </div>
 
+                <!-- 选择方式 -->
+                <div class="r-methonds">
+                    <ul>
+                        <li class="methond1">电子邮件注册</li>
+                        <li class="methond2">手机号注册</li>
+                    </ul>
                 </div>
 
                 <!-- 邮箱或手机号 -->
                 <div class="box">
-                    <!-- 邮箱框 -->
-                    <div class="num e_num">
-                        <div class="form-group input-material">
-                            <input type="email" class="form-control" id="email-field" required>
-                            <label for="email-field">邮箱</label>
+                    <!-- 具体方式 -->
+                    <div class="details">
+                        <div class="detail1">
+                            <p class="p_email">邮箱命名不合法！</p>
+                            <input type="text" class="emails" name="remail" id="remails">
+                            <label for="remail">邮箱</label>
                         </div>
-                    </div>
-                    <!-- 手机号框 -->
-                    <div class="num p_num">
-                        <div class="form-group input-material">
-                            <input type="text" value="地区" class="area">
-                            <input type="text" class="form-control p_mobile" id="name-field" required>
-                            <label for="name-field" class="p_label">手机号</label>
-                        </div>
-                    </div>
-                    <!-- 密码框 -->
-                    <div class="num e_num">
-                        <div class="form-group input-material">
-                            <input type="password" class="form-control" id="email-field" required>
-                            <label for="email-field">密码</label>
+                        <div class="detail2">
+                            <!-- 手机号 -->
+                            <div class="number">
+                                <div class="area">+86</div>
+                                <input type="text" class="phones" name="phone">
+                                <label for="phone">手机号注册</label>
+                            </div>
                         </div>
                     </div>
                 </div>
+                <div class="pwds">
+                    <div class="in">
+                        <p class="p_pwd">请输入密码</p>
+                        <input type="password" class="password" id="rpwds" name="rpwd" placeholder="密码">
+                        <i class="show_pass glyphicon glyphicon-eye-open"></i>
+                    </div>
+
+                </div>
+
                 <!-- 忘记密码 -->
                 <div class="forget">
                     <div class="left">
@@ -72,15 +75,106 @@
                 </div>
                 <!-- 提交 -->
                 <div class="sub">
-                    <input type="button" value="登录">
+                    <input type="button" value="登录" id="re_sub">
                 </div>
-                <p>还没有账号</p>
+                <p class="nocount">还没有账号</p>
                 <!-- 去注册 -->
-                <div class="sub">
-                    <input type="button" value="注册">
+                <div class="sub reg">
+                    <!-- <input type="button" class="btn" data-toggle='modal' data-target='.wq-add' value="注册"> -->
+                    <!-- <button type="button" class="btn" data-toggle='modal' data-target='.wq-add'>注册</button> -->
+                    <button type="button" class="btn" data-toggle='modal' data-target='.wq-add'>添加错题</button>
                 </div>
             </div>
         </div>
+
+
+
+        <!-- 注册页的模态框 -->
+        <!-- Button trigger modal -->
+        <!--添加错题部分-->
+        <!-- 模态框 -->
+        <div class="modal fade wq-add">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <!-- 头部 -->
+                    <div class="r-header">
+                        <img src="../img/logo-cn.png" alt="">
+                    </div>
+                    <!-- 选择方式 -->
+                    <div class="r-methonds">
+                        <ul>
+                            <li class="methond1">电子邮件注册</li>
+                            <li class="methond2">手机号注册</li>
+                        </ul>
+                    </div>
+                    <!-- 具体方式 -->
+                    <div class="details">
+                        <div class="detail1">
+                            <p class="p_email">邮箱命名不合法！</p>
+                            <input type="text" class="emails" name="uemail" id="uemails">
+                            <label for="uemail">邮箱</label>
+                        </div>
+                        <div class="detail2">
+                            <!-- 手机号 -->
+                            <div class="number">
+                                <div class="area">+86</div>
+                                <input type="text" class="phones" name="phone">
+                                <label for="phone">手机号注册</label>
+                            </div>
+                            <!-- 图片验证 -->
+                            <div class="pic-test">
+                                <input type="text" class="test" name="test1">
+                                <label for="test1">图形验证码</label>
+                                <div class="pic"></div>
+                            </div>
+                            <!-- 验证码验证 -->
+                            <div class="code-test">
+                                <input type="text" class="test" name="test2">
+                                <label for="test2">手机验证码</label>
+                                <div class="code"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 密码 -->
+                    <div class="pwds">
+                        <div class="in">
+                            <p class="p_pwd">请输入密码</p>
+                            <input type="password" class="password" id="upwds" name="upwd" placeholder="密码">
+                            <i class="show_pass glyphicon glyphicon-eye-open"></i>
+                        </div>
+                        <div class="te">
+                            <p class="p_pwdt">请确认密码</p>
+                            <input type="password" class="password" placeholder="确认密码">
+                            <i class="show_pass glyphicon glyphicon-eye-open"></i>
+                        </div>
+                    </div>
+                    <!-- 条款 -->
+                    <div class="law">
+                        <input type="checkbox" name="" id="">
+                        <span>
+                            我同意Gshopper
+                            <i>法律条款</i>
+                            和 &nbsp;
+                            <i>隐私保护</i>
+
+                        </span>
+                    </div>
+                    <div class="send">
+                        <input type="checkbox" name="" id="">
+                        <span>
+                            我同意接收Gshopper推送邮件
+                        </span>
+                    </div>
+                    <!--细节划分-->
+                    <div class=" text-center">
+                        <button type="button" class="btn btn-success" data-dismiss='modal'
+                            id="wq-save-question">注册</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
         <!-- footer -->
         <div class="footer">
             <!-- 版心 -->
@@ -310,23 +404,29 @@
 
 
 
+        <!-- 导入jq -->
+        <script src="../js/jquery-1.12.4.min.js"></script>
+        <!-- 引入cookie -->
+        <script src="../js/jquery.cookie.min.js"></script>
+        <!-- 导入bootstrap -->
+        <script src="../js/bootstrap.min.js"></script>
+        <!-- 导入公共js -->
+        <script src="../js/public.min.js"></script>
+        <!-- 引入login.js -->
+        <script src="../js/login.min.js"></script>
+        <!-- 引入registrer的js -->
+        <script src="../js/registr.min.js"></script>
 
+        <!-- <script src="../js/login.js"></script> -->
 
-
-
-
-
-
-
-        <script src="../js/jquery-1.11.0.min.js" type="text/javascript"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
             integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
             crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
             integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
-            crossorigin="anonymous"></script>
+            crossorigin="anonymous"></script> -->
         <!-- Materialise-inputs JS -->
-        <script src="../js/materialize-inputs.jquery.js"></script>
+        <!-- <script src="../js/materialize-inputs.jquery.min.js"></script>
         <script>
             $('document').ready(function () {
 
@@ -334,7 +434,10 @@
                 $('body').materializeInputs();
 
             });
-        </script>
+        </script> -->
+
+
+
 </body>
 
 </html>
