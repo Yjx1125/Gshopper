@@ -1,17 +1,17 @@
 @import "public";
-html,
-body {
-    height: 100%;
-    overflow: hidden;
-}
+// html,
+// body {
+//     height: 100%;
+//     overflow: hidden;
+// }
 .main{
     width: 1349px;
     height: 1483px;
-    background-color: pink;
+    // background-color: pink;
     .main-content{
         width: 1285px;
         height: 1483px;
-        background-color: palegreen;
+        // background-color: palegreen;
         border: 1px solid transparent;
         margin: 0 auto;
         .main-nav{
@@ -19,14 +19,14 @@ body {
             height:12px;
             margin: 40px 0;
             line-height: 12px;
-            background-color: #fff;
+            // background-color: #fff;
             a{
                 font-size: 12px;
                 color: rgba(0,0,0,0.85);
             }
         }.main-details{
             width: 1285px;
-            background-color: peru;
+        
             height: 1483px;
 
             // height:12px;
@@ -35,7 +35,7 @@ body {
                 height: 1483px;
                 float: left;
                 margin-right: 60px;
-                background-color: purple;
+        //    background-color: #FF5224;
                 .left-reset{
                     width: 270px;
                     height: 36px;
@@ -49,7 +49,7 @@ body {
                     width: 270px;
                     height: 28px;
                     line-height: 28px;
-                    background-color: plum;
+                  
                     input{
                         // display: block;
                         width: 20px;
@@ -70,11 +70,11 @@ body {
                     color: #333333;
                     font-size: 14px;
                     line-height: 17px;
-                    background-color: red;
+                  
                 }.left-range{
                     width: 270px;
                     height: 17px;
-                    background-color: powderblue;
+                   
                    font-size: 12px;
                    color: #333333;
                    :first-child{
@@ -88,7 +88,7 @@ body {
                     width: 270px;
                     height:30px;
                     border: 1px solid transparent;
-                    background-color: seagreen;
+                    // background-color: seagreen;
                     .a{
                         width: 250px;
                         margin-top: 15px;
@@ -98,7 +98,7 @@ body {
                 }.num-range{
                    width: 270px;
                    height: 60px; 
-                   background-color: #FF5224;
+                //    background-color: #FF5224;
                   .min{
                        width: 115px;
                        height: 44px;
@@ -124,26 +124,206 @@ body {
                    }
                 }.left-seletion{
                     width: 270px;
-                    height: 120px;
-                    background-color: yellow;
+                    height: 200px;
+                
                 }.left-hots{
                     width: 270px;
                     height: 559px;
-                    background-color: #dcdfe6;
+               margin-top: 10px;
                      border: 1px solid #dcdfe6;
                      color: black;
                      .left-hot{
-
+                        width: 270px;
+                        h3{
+                            height: 19px;
+                            font-size: 16px;
+                            color: #282828;
+                            line-height: 19px;
+                       
+                        }
+                        .h1{
+                            width: 256px;
+                            height: 80px;
+                            position: relative;
+                            a{
+                                display: block;
+                                font-size: 13px;
+                                color: rgba(0, 0, 0, 0.85);
+             
+                                img{
+                                    width: 80px;
+                                    height: 80px;
+                                    float: left;
+                                }.h1-info{
+                                    width: 168px;
+                                    height: 80px;
+                                    margin-left: 5px;
+                                
+                                    float: left;
+                                    .info-top{
+                                        width: 168px;
+                                        height: 34px;
+                                        padding-top: 15px;
+                                        // line-height: 34px;
+                                     
+                                    }.info-bottom{
+                                        font-size: 16px;
+                                        color: #FF5224;
+                                        font-weight: bolder;
+                                        margin-top: 15px;
+                                     
+                                    }
+                                }span{
+                                    display: block;
+                                    width: 20px;
+                                    height: 20px;
+                                        position: absolute;
+                                        left: 5px;
+                                        top: 5px;
+                                
+                                        // z-index: 2;
+                                        font-size: 8px;
+                                        color: #FF5224;
+                                        border-radius: 50%;
+                                     background-color: yellow;
+                                        border: 1px solid white;
+                                        line-height: 20px;
+                                        text-align: center;
+                                }
+                            }
+                        }
+                     }
+                     .hot-more{
+                      width: 64px;
+                        height: 22px;
+                        line-height: 22px;
+                        padding: 0 8px;
+                        font-size: 12px;
+                        margin: 0 auto;
+                        color: rgba(0, 0, 0, 0.65);
+                        cursor: pointer;
+                        background-color: #f5f5f5;
+                        border-radius: 12px;
                      }
                 }
 
 
-
             }.main-right{
                 width: 955px;
-                height: 1483px;
+                // height: 1483px;
                 float: left;
+                .tabbox{
+                    width:955px;
+                    // height: 1483px;
+                    margin: 0 auto;
+                    // background: #f0f0f0;
+                    // border: 1px solid black;
+                    font-family: '微软雅黑';
+                    position: relative;
+                      .sort{
+                            display: block;
+                            padding: 10px 20px;
+                           float: left;
+                           text-decoration: none;
+                            color: #333; 
+                            position: absolute;
+                            top: 0;
+                            left: -2px;
+                        }
+                    .tab{
+                        overflow: hidden;
+                        padding-left: 70px;
+                     
+                        a{
+                            display: block;
+                            padding: 10px 20px;
+                           float: left;
+                           text-decoration: none;
+                            color: #333; 
+                            .on {
+                                background: #FF5224;
+                                color: #fff;
+                                text-decoration: none;
+                            }
+                        } a:hover {
+                            background: #FF5224;
+                            color: #fff;
+                            text-decoration: none;
+                        }
+                    }.content{
+                        overflow: hidden;
+                        padding: 10px;
+                        li {
+                            width: 955px;
+                            // height: 1483px;
+                            display: none;
+                            // background: #FF5224;
+                            .c-details{
+                                width: 100%;
+                                height: 428px;
+                                // padding: 20px 24px;
+                                // background-color: palevioletred;
+                               div{
+                                   width: 305px;
+                                   height: 427px;
+                                //    background-color: peru;
+                                   margin-right: 15px;
+                                   float: left;
+                                   a{
+                                       display: block;
+                                       width: 365px;
+                                       height: 387px;
+                                       padding: 20px 20px;
+                                       .d1{
+                                           width: 268px;
+                                           height: 268px;
+                                       }.brand-box{
+                                           width:268px;
+                                           height: 17px;
+                                           font-size: 12px;
+                                           margin-top: 10px;
+                                        
+                                           img{
+                                               width: 16px;
+                                               height: 16px;
+                                           }span{
+                                           
+                                            margin-left: 8px;
+                                            font-size: 13px;
+                                            color: #666666;
+                                           }
+                                       }.d-info{
+                                           width: 269px;
+                                           height: 40px;
+                                        //    background-color: pink;
+                                           line-height: 20px;
+                                           font-size: 14px;
+                                           color: #000000;
+                                           font-weight: normal;
+                                           margin-top: 6px;
+                                        //    min-height: 32px;
+                                        }.d-price{
+                                           width: 269px;
+                                           height: 18px;
+                                           color: #FF5224;
+                                           font-size: 18px;
+                                           font-weight: bolder;
+                                           text-indent: 3px;
 
+                                        }.d-level{
+                                            width: 269px;
+                                            height: 14px;
+                                            margin-top: 10px;
+                                        }
+                                   }
+                               }.last{
+                                   margin-right: 0;
+                               }
+                                
+                            }
+                        }
+                    }
+                }
             }
         }
     }

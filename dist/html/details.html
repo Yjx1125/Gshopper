@@ -5,10 +5,145 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>详情页</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/details.min.css">
 </head>
 
 <body>
+    <!-- 头部 -->
+    <div class="header">
+        <div class="header-contain">
+            <!-- 头上部 -->
+            <div class="header-top">
+                <div class="h_inform">快递通知：因新疆疫情加重，部分物流快递发往新疆件停发，如给您带来不便，敬请谅解！</div>
+                <div class="h_address">收货地区 <img src="../img/china.png" alt="" id="china"> <span><img src="../img/down.png" alt=""></span>
+                </div>
+                <div class="h_language">简体中文 <span><img src="../img/down.png" alt=""></span></div>
+            </div>
+            <!-- 头下部 -->
+            <div class="header_bottom">
+                <!-- logo图标 -->
+                <div class="h_left">
+                    <a href="javascript:;"><img src="../img/logo-cn.png" alt=""></a>
+                </div>
+                <!-- 输入框 -->
+                <div class="h_center">
+                    <div>
+                        <input type="text" value="请输入关键词" class="h_search"><input type="button" class="h_sub">
+                    </div>
+                    <div class="h_nav">
+                        <ul>
+                            <li><a href="javascript:;">面膜</a></li>
+                            <li><a href="javascript:;">洗面奶</a></li>
+                            <li><a href="javascript:;">防嗮</a></li>
+                            <li><a href="javascript:;">乐高</a></li>
+                            <li><a href="javascript:;">资生堂</a></li>
+                            <li><a href="javascript:;">香水</a></li>
+                            <li><a href="javascript:;">眼影</a></li>
+                            <li><a href="javascript:;">Re-fa</a></li>
+                            <li><a href="javascript:;">SK-II</a></li>
+                            <li><a href="javascript:;">雅诗兰黛</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="h_right">
+                    <span class="glyphicon glyphicon-user hfonts"></span>
+                    <a href="javascript:;">登录</a>
+                    <span class="glyphicon glyphicon-heart hfonts"></span>
+                    <span class="glyphicon glyphicon-shopping-cart hfonts"></span>
+                </div>
 
+            </div>
+        </div>
+    </div>
+    <div class="main">
+        <div class="main-content">
+            <!-- 导航部分 -->
+            <div class="main-nav">
+                <a href="../index.html">首页</a>
+                <img src="../img/next-1.png" alt="">
+                <a href="./list.html">特色类别</a>
+                <img src="../img/next-1.png" alt="">
+                <a href="./details.html">特色类别</a>
+            </div>
+            <!-- 主体部分 -->
+            <div class="main-details">
+                <!-- left -->
+                <div class="main-left">
+                    <!-- 左边 -->
+                    <div class="l-left">
+                        <ul class="slides">
+                            <li><img src="../img/x1.jpeg" alt=""> </li>
+                            <li><img src="../img/x2.jpeg" alt=""> </li>
+                            <li><img src="../img/x4.jpeg" alt=""> </li>
+                            <li><img src="../img/x5.jpeg" alt=""> </li>
+                            <li><img src="../img/x6.jpeg" alt=""> </li>
+                        </ul>
+                    </div>
+                    <!-- 右边 -->
+                    <div class="l-right">
+
+                        <div class="content">
+                            <div class="c"><img src="../img/x1.jpeg" alt=""></div>
+                            <div class="c"><img src="../img/x2.jpeg" alt=""></div>
+                            <div class="c"><img src="../img/x3.jpeg" alt=""></div>
+                            <div class="c"><img src="../img/x4.jpeg" alt=""></div>
+                            <div class="c"><img src="../img/x5.jpeg" alt=""></div>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- right -->
+                <div class="main-right">
+                    <p class="r-name">兰蔻</p>
+                    <p class="r-net">兰蔻玫瑰露清滢柔肤化妆水400ml</p>
+                    <div class="r-price">￥&nbsp;149.00 <span>￥300.00</span></div>
+                    <div class="r-send">价格已包含税费，无需另付税费</div>
+                    <div class="r-weight">
+                        <div class="r-word">净含量</div>
+                        <div class="r-words">400ml</div>
+                    </div>
+                    <!-- 送达 -->
+                    <div class="r-soda">
+                        <div class="r-free">送达</div>
+                        <div class="r-from">
+                            <div class="small-circle"></div>
+                            <div class="send-info"><span>&nbsp;免运费&nbsp;</span>4-5天&nbsp;配送自&nbsp;中国</div>
+                        </div>
+                    </div>
+                    <!-- 数量 -->
+                    <div class="r-num">
+                        <div class="r-nums">数量</div>
+                        <div class="r-change">
+                            <div class="r-min">-</div>
+                            <div class="r-number">1</div>
+                            <div class="r-add">+</div>
+                        </div>
+                    </div>
+                    <!-- 总价 -->
+                    <div class="r-total">
+                        <div class="total-price">总价</div>
+                        <div class="totals">
+                            ￥195.00
+                        </div>
+                    </div>
+                    <!-- 加入购物车 -->
+                    <div class="carts">
+                        <div class="add">加入购物车</div>
+                        <div class="buy">立即购买</div>
+                    </div>
+                </div>
+            </div>>
+        </div>
+    </div>
+
+
+    <!-- 底部 -->
+
+    <script src="../js/jquery-1.12.4.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/jquery.cookie.js"></script>
+    <script src="../js/list.min.js"></script>
 </body>
 
 </html>

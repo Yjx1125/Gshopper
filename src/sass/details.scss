@@ -1,0 +1,278 @@
+// @import "public";
+@import "public";
+.main{
+    width: 1349px;
+    height: 800px;
+    background-color: pink;
+    .main-content{
+        width: 1285px;
+        height: 640px;
+        background-color: powderblue;
+        margin: 0 auto;
+        border: 1px solid transparent;
+        .main-nav{
+            width: 1285px;
+            height:12px;
+            margin: 40px 0;
+            line-height: 12px;
+            // background-color: #fff;
+            a{
+                font-size: 12px;
+                color: rgba(0,0,0,0.85);
+            }
+        }.main-details{
+            width: 1285px;
+            height: 640px;
+            background-color: rosybrown;
+            .main-left{
+                width:813px;
+                height: 558px;
+                float: left;
+                background-color: salmon;
+                margin-right: 60px;
+                .l-left{
+                    width: 70px;
+                    height: 558px;
+                    float: left;
+                    background-color: violet;
+                    ul{
+                        li{
+                            img{
+                                width: 66px;
+                                height: 66px;
+                                margin-top: 10px;
+                            }
+                        }
+                    }
+                }.l-right{
+                    width:710px;
+                    height: 558px;
+                    float: left;
+                    background-color: whitesmoke;
+                    .content{
+                        width:710px;
+                        height: 558px;
+                        div{
+                            display: none;
+                            img{
+                                width: 500px;
+                                height: 500px;
+                                margin: 28px 105px;
+                                // display: none;
+                            }
+                        }
+                        }
+                     
+                }
+
+            }.main-right{
+                width: 411px;
+                height: 547px;
+                float: left;
+                background-color: sandybrown;
+                .r-name{
+                    width: 411px;
+                    height: 26px;
+                    font-size: 16px;
+                    color:#666666;
+                }.r-net{
+                    width: 411px;
+                    height: 26px;
+                    font-weight: normal;
+                    font-size: 22px;
+                    color: rgba(0, 0, 0, 0.87);
+                    line-height: 28px;
+                    margin-top: 10px;
+                }.r-price{
+                    width: 411px;
+                    height: 50px;
+                    color: #FF5224;
+                    font-size: 26px;
+                    margin-top: 10px;
+                    span{
+                        font-size: 13px;
+                      line-height: 21px;
+                         padding-left: 16px;
+                            padding-top: 6px;
+                            color: rgba(0, 0, 0, 0.45);
+                           text-decoration: line-through;
+                    }
+                }.r-weight{
+                    width: 411px;
+                    height: 48px;
+                    background-color: silver;
+                    .r-word{
+                        width: 100px;
+                        height: 48px;
+                        font-size: 13px;
+                        line-height: 48px;
+                        text-align: center;
+                        float: left;
+                        color: rgba(102, 102, 102, 0.87);
+                    }.r-words{
+                        width: 311px;
+                        height: 48px;
+                        background-color: skyblue;
+                        float: left;
+                        text-indent: 15px;
+                        line-height: 48px;
+                        border: 1px solid #c4c4c4;
+                        border-radius: 4px;
+                    }
+                }.r-soda{
+                    width: 411px;
+                    height: 48px;
+                    background-color: silver;
+                    margin-top: 10px;
+                    .r-free{
+                        width: 100px;
+                        height: 48px;
+                        font-size: 13px;
+                        line-height: 48px;
+                        text-align: center;
+                        float: left;
+                        background-color: slateblue;
+                        color: rgba(102, 102, 102, 0.87);
+                    }.r-from{
+                        width: 311px;
+                        height: 48px;
+                        background-color: skyblue;
+                        float: left;
+                        // text-indent: 15px;
+                        line-height: 48px;
+                        // border: 1px solid #c4c4c4;
+                        border-radius: 4px;
+                        .small-circle{
+                            float: left;
+                            width: 14px;
+                            height: 14px;
+                            margin: 17px 10px 17px 10px;
+
+                            border: 4px solid #FF5224;
+                            border-radius: 50%;
+                        }.send-info{
+                            width: 275px;
+                             height: 48px;
+                             float: left;
+                         
+                             color: rgba(0, 0, 0, 0.65);
+                             font-size: 13px;
+                             background-color: tomato;
+                            span{
+                                font-size: 14px;
+                                font-weight: 500;
+                                color: rgba(0, 0, 0, 0.85);
+                            }
+                        }}
+                    }.r-num{
+                        width: 411px;
+                        height: 48px;
+                        background-color: silver;
+                        margin-top: 10px; 
+                        .r-nums{
+                            width: 100px;
+                            height: 48px;
+                            font-size: 13px;
+                            line-height: 48px;
+                            text-align: center;
+                            float: left;
+                            background-color: slateblue;
+                            color: rgba(102, 102, 102, 0.87);
+                        }.r-change{
+                            width: 311px;
+                            height: 48px;
+                            background-color: skyblue;
+                            float: left;
+                            padding: 10px 0;
+                            // line-height: 48px;
+                            border-radius: 4px;
+                            text-align: center;
+                            line-height: 48px;
+                            .r-min{
+                                width: 36px;
+                                height: 26px;
+                                float: left;
+                                margin-left: 30px;
+                                line-height: 26px;
+                                background-color:red;
+                            }
+                            .r-number{
+                                width: 36px;
+                                height: 26px;
+                                float: left;
+                                background-color:red;
+                                margin-left: 30px;
+                                line-height: 26px;
+                            }
+                            .r-add{
+                                width: 36px;
+                                height: 26px;
+                                float: left;
+                                margin-left: 30px;
+                                line-height: 26px;
+                                background-color:red;
+                            }
+                        }
+                    }.r-total{
+                        width: 411px;
+                        height: 48px;
+                        background-color: silver;
+                        margin-top: 10px; 
+                        .total-price{
+                            width: 100px;
+                            height: 48px;
+                            font-size: 13px;
+                            line-height: 48px;
+                            text-align: center;
+                            float: left;
+                            background-color: slateblue;
+                            color: rgba(102, 102, 102, 0.87);
+                        }
+                        .totals{
+                            width: 311px;
+                            height: 48px;
+                            background-color: skyblue;
+                            float: left;
+                      
+                            border-radius: 4px;
+                            text-align: center;
+                            line-height: 48px;
+                            font-size: 20px;
+                           font-weight: 600;
+                             color: #FF5224;
+                        }
+                    }
+                }.carts{
+                    width: 411px;
+                    height: 48px;
+                    background-color: silver;
+                    margin-top: 10px; 
+
+                    .add{
+                        width: 198.5px;
+                        height: 50px;
+                        border: 1px solid #e4e7ed;
+                        color: #cccccc;
+                        font-size: 16px;
+                        text-align: center;
+              line-height: 50px;
+                        background-color: #ffffff;
+                 float: left;
+                    }.buy{
+                        width: 196.5px;
+                        height: 50px;
+                        text-align: center;
+                        margin-left: 16px;
+                        color: #ffffff;
+                          line-height: 50px;
+
+                        border-radius: 4px;
+                        background: #e4e7ed !important;
+                  float: left;
+                    }
+                }
+                    
+            
+    }
+    }
+}
