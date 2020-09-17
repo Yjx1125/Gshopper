@@ -48,9 +48,10 @@
                 </div>
                 <div class="h_right">
                     <span class="glyphicon glyphicon-user hfonts"></span>
-                    <a href="javascript:;">登录</a>
+                    <a href="./login.html">登录</a>
                     <span class="glyphicon glyphicon-heart hfonts"></span>
                     <span class="glyphicon glyphicon-shopping-cart hfonts"></span>
+                    <span class="carts-number"></span>
                 </div>
 
             </div>
@@ -64,7 +65,7 @@
                 <img src="../img/next-1.png" alt="">
                 <a href="./list.html">特色类别</a>
                 <img src="../img/next-1.png" alt="">
-                <a href="./details.html">特色类别</a>
+                <a href="./details.html">爽肤水</a>
             </div>
             <!-- 主体部分 -->
             <div class="main-details">
@@ -73,11 +74,11 @@
                     <!-- 左边 -->
                     <div class="l-left">
                         <ul class="slides">
-                            <li><img src="../img/x1.jpeg" alt=""> </li>
+                            <li class="tfirst"><img class="carts-img" src="../img/x1.jpeg" alt=""> </li>
                             <li><img src="../img/x2.jpeg" alt=""> </li>
+                            <li><img src="../img/x3.jpeg" alt=""> </li>
                             <li><img src="../img/x4.jpeg" alt=""> </li>
                             <li><img src="../img/x5.jpeg" alt=""> </li>
-                            <li><img src="../img/x6.jpeg" alt=""> </li>
                         </ul>
                     </div>
                     <!-- 右边 -->
@@ -94,10 +95,11 @@
 
                 </div>
                 <!-- right -->
-                <div class="main-right">
+                <div class="main-right" data-good-id="sp1">
                     <p class="r-name">兰蔻</p>
                     <p class="r-net">兰蔻玫瑰露清滢柔肤化妆水400ml</p>
-                    <div class="r-price">￥&nbsp;149.00 <span>￥300.00</span></div>
+                    <div class="r-price"> ￥&nbsp;<i class="p" style="font-style: normal;">149.00</i>
+                        <span>￥300.00</span></div>
                     <div class="r-send">价格已包含税费，无需另付税费</div>
                     <div class="r-weight">
                         <div class="r-word">净含量</div>
@@ -129,8 +131,8 @@
                     </div>
                     <!-- 加入购物车 -->
                     <div class="carts">
-                        <div class="add">加入购物车</div>
-                        <div class="buy">立即购买</div>
+                        <input type="button" class="add" value="加入购物车s">
+                        <input type="button" class="buy" value="立即购买">
                     </div>
                 </div>
             </div>>
@@ -138,12 +140,195 @@
     </div>
 
 
-    <!-- 底部 -->
 
+    <!-- 底部 -->
+    <!-- 脚部 -->
+    <!-- footer -->
+    <div class="footer">
+        <!-- 版心 -->
+        <div class="f_center">
+            <!-- 上部 -->
+            <div class="footer_top">
+                <ul>
+                    <li>
+                        <div class="t_logo">
+                            <img src="../img/bot1.png" alt="">
+                        </div>
+                        <div class="t_info">
+                            <h2>自营商品</h2>
+                            <p class="infos">发现全球商品好货</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="t_logo">
+                            <img src="../img/bot2.png" alt="">
+                        </div>
+                        <div class="t_info">
+                            <h2>高性价比</h2>
+                            <p class="infos">专注为你省时省钱</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="t_logo">
+                            <img src="../img/bot3.png" alt="">
+                        </div>
+                        <div class="t_info">
+                            <h2>全球评论</h2>
+                            <p class="infos">参阅全球买家评论</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="t_logo">
+                            <img src="../img/bot4.png" alt="">
+                        </div>
+                        <div class="t_info">
+                            <h2>安心购买</h2>
+                            <p class="infos">发购物流程安全可靠</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <!-- 中部 -->
+            <div class="footer_center">
+                <div class="footer_c c_left">
+                    <div class="c_left_title">Gshopper App</div>
+                    <div class="c_left_info">
+                        <img src="../img/phone.png" alt="">
+                        <a href="javascript:;" class="download">下载 iOS 或安卓客户端</a>
+                    </div>
+                </div>
+                <div class="footer_c c_center">
+                    <div class="c_center_title">合作品牌</div>
+                    <div class="brands">
+                        <div class="brand1">
+                            <a href="javascript:;">
+                                <img src="../img/pinp1.png" alt="" class="img1">
+                                <img src="../img/pinp-hover.png" alt="" class="img2">
+                            </a>
+
+                        </div>
+                        <div class="brand1">
+                            <a href="javascript:;">
+                                <img src="../img/pinp2.png" alt="" class="img1">
+                                <img src="../img/pinp2-hover.png" alt="" class="img2">
+                            </a>
+                        </div>
+                        <div class="brand1">
+                            <a href="javascript:;">
+                                <img src="../img/pinp3.png" alt="" class="img1">
+                                <img src="../img/pinp3-hover.png" alt="" class="img2">
+                            </a>
+                        </div>
+                        <div class="brand1">
+                            <a href="javascript:;">
+                                <img src="../img/pinp4.png" alt="" class="img1">
+                                <img src="../img/pipe4-hover.png" alt="" class="img2">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="c_center_title c_center_title2">关注我们</div>
+                    <div class="brands">
+                        <div class="brand1 brand2">
+                            <a href="javascript:;">
+                                <img src="../img/wechat.png" alt="" class="img1">
+                                <img src="../img/wechat-hover.png" alt="" class="img2">
+                            </a>
+
+                        </div>
+                        <div class="brand1 brand2">
+                            <a href="javascript:;">
+                                <img src="../img/weibo.png" alt="" class="img1">
+                                <img src="../img/weibo-hover.png" alt="" class="img2">
+                            </a>
+                        </div>
+                        <div class="brand1 brand2">
+                            <a href="javascript:;">
+                                <img src="../img/xiaohs.png" alt="" class="img1">
+                                <img src="../img/xiaohs-hove.png" alt="" class="img2">
+                            </a>
+                        </div>
+                    </div>
+
+
+                </div>
+                <div class="footer_c c_right">
+                    <div class="r_left">
+                        <div class="c_left_title">帮助中心</div>
+                        <div class="r_details">
+                            <a href="javascript:;">免责声明</a>
+                            <a href="javascript:;">退货与退款</a>
+                            <a href="javascript:;">消费者告知书</a>
+                            <a href="javascript:;">常见政策</a>
+                            <a href="javascript:;">隐私政策</a>
+                            <a href="javascript:;">法律条款</a>
+
+                        </div>
+                    </div>
+                    <div class="r_right">
+                        <div class="c_left_title">关于Gshopper</div>
+                        <div class="r_details">
+                            <a href="javascript:;">联系我们</a>
+                            <a href="javascript:;">企业信息</a>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <!-- 底部 -->
+            <div class="footer_bottom">
+                <div class="links">
+                    <ul>
+                        <li> <a href="javascript:;">
+                                <img src="../img/link1.svg" alt="">
+                            </a>
+                        </li>
+                        <li> <a href="javascript:;">
+                                <img src="../img/link2.png" alt="">
+                            </a>
+                        </li>
+                        <li> <a href="javascript:;">
+                                <img src="../img/link3.png" alt="">
+                            </a>
+                        </li>
+                        <li> <a href="javascript:;">
+                                <img src="../img/link4.png" alt="">
+                            </a>
+                        </li>
+                        <li> <a href="javascript:;">
+                                <img src="../img/link5.png" alt="">
+                            </a>
+                        </li>
+                        <li> <a href="javascript:;">
+                                <img src="../img/link6.png" alt="">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="info">
+                    <p class="information">
+                        <span>沪 ICP 备 B2-20130065 （沪）-经营性-2020-0041</span>
+                        <a href="javascript:;">
+                            <img src="../img/gongan.png" alt="">
+                            沪公安网备31011502008503
+                            <img src="../img/buse1.png" alt="" class="img2">
+                        </a>
+                        <span>上海载和网络科技有限公司</span>
+
+                    </p>
+                    <p class="addre"> 中国（上海）自由贸易试验区东方路1217、1217-1号6幢6楼F-3 </p>
+                    <p class="copy">Copyright © 2020 Gshopper. All Rights Reserved</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 底部 -->
     <script src="../js/jquery-1.12.4.min.js"></script>
+    <script src="../js/jquery.cookie.min.js"></script>
     <script src="../js/bootstrap.min.js"></script>
-    <script src="../js/jquery.cookie.js"></script>
     <script src="../js/list.min.js"></script>
+    <script src="../js/public.min.js"></script>
+    <script src="../js/details.min.js"></script>
 </body>
 
 </html>

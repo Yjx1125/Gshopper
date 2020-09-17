@@ -3,11 +3,11 @@
 .main{
     width: 1349px;
     height: 800px;
-    background-color: pink;
+    // background-color: pink;
     .main-content{
         width: 1285px;
         height: 640px;
-        background-color: powderblue;
+        // background-color: powderblue;
         margin: 0 auto;
         border: 1px solid transparent;
         .main-nav{
@@ -23,18 +23,18 @@
         }.main-details{
             width: 1285px;
             height: 640px;
-            background-color: rosybrown;
+            // background-color: rosybrown;
             .main-left{
                 width:813px;
                 height: 558px;
                 float: left;
-                background-color: salmon;
+                // background-color: salmon;
                 margin-right: 60px;
                 .l-left{
                     width: 70px;
                     height: 558px;
                     float: left;
-                    background-color: violet;
+                    // background-color: violet;
                     ul{
                         li{
                             img{
@@ -48,7 +48,7 @@
                     width:710px;
                     height: 558px;
                     float: left;
-                    background-color: whitesmoke;
+                    // background-color: whitesmoke;
                     .content{
                         width:710px;
                         height: 558px;
@@ -69,7 +69,7 @@
                 width: 411px;
                 height: 547px;
                 float: left;
-                background-color: sandybrown;
+                // background-color: sandybrown;
                 .r-name{
                     width: 411px;
                     height: 26px;
@@ -100,7 +100,7 @@
                 }.r-weight{
                     width: 411px;
                     height: 48px;
-                    background-color: silver;
+                    // background-color: silver;
                     .r-word{
                         width: 100px;
                         height: 48px;
@@ -112,7 +112,7 @@
                     }.r-words{
                         width: 311px;
                         height: 48px;
-                        background-color: skyblue;
+                        // background-color: skyblue;
                         float: left;
                         text-indent: 15px;
                         line-height: 48px;
@@ -122,7 +122,7 @@
                 }.r-soda{
                     width: 411px;
                     height: 48px;
-                    background-color: silver;
+                    // background-color: silver;
                     margin-top: 10px;
                     .r-free{
                         width: 100px;
@@ -131,12 +131,12 @@
                         line-height: 48px;
                         text-align: center;
                         float: left;
-                        background-color: slateblue;
+                        // background-color: slateblue;
                         color: rgba(102, 102, 102, 0.87);
                     }.r-from{
                         width: 311px;
                         height: 48px;
-                        background-color: skyblue;
+                        // background-color: skyblue;
                         float: left;
                         // text-indent: 15px;
                         line-height: 48px;
@@ -157,7 +157,7 @@
                          
                              color: rgba(0, 0, 0, 0.65);
                              font-size: 13px;
-                             background-color: tomato;
+                            //  background-color: tomato;
                             span{
                                 font-size: 14px;
                                 font-weight: 500;
@@ -167,7 +167,7 @@
                     }.r-num{
                         width: 411px;
                         height: 48px;
-                        background-color: silver;
+                        // background-color: silver;
                         margin-top: 10px; 
                         .r-nums{
                             width: 100px;
@@ -176,12 +176,12 @@
                             line-height: 48px;
                             text-align: center;
                             float: left;
-                            background-color: slateblue;
+                            // background-color: slateblue;
                             color: rgba(102, 102, 102, 0.87);
                         }.r-change{
                             width: 311px;
                             height: 48px;
-                            background-color: skyblue;
+                            // background-color: skyblue;
                             float: left;
                             padding: 10px 0;
                             // line-height: 48px;
@@ -194,13 +194,13 @@
                                 float: left;
                                 margin-left: 30px;
                                 line-height: 26px;
-                                background-color:red;
+                                // background-color:red;
                             }
                             .r-number{
                                 width: 36px;
                                 height: 26px;
                                 float: left;
-                                background-color:red;
+                                // background-color:red;
                                 margin-left: 30px;
                                 line-height: 26px;
                             }
@@ -210,13 +210,13 @@
                                 float: left;
                                 margin-left: 30px;
                                 line-height: 26px;
-                                background-color:red;
+                                // background-color:red;
                             }
                         }
                     }.r-total{
                         width: 411px;
                         height: 48px;
-                        background-color: silver;
+                        // background-color: silver;
                         margin-top: 10px; 
                         .total-price{
                             width: 100px;
@@ -225,13 +225,13 @@
                             line-height: 48px;
                             text-align: center;
                             float: left;
-                            background-color: slateblue;
+                            // background-color: slateblue;
                             color: rgba(102, 102, 102, 0.87);
                         }
                         .totals{
                             width: 311px;
                             height: 48px;
-                            background-color: skyblue;
+                            // background-color: skyblue;
                             float: left;
                       
                             border-radius: 4px;
@@ -245,7 +245,7 @@
                 }.carts{
                     width: 411px;
                     height: 48px;
-                    background-color: silver;
+                    // background-color: silver;
                     margin-top: 10px; 
 
                     .add{
@@ -256,6 +256,8 @@
                         font-size: 16px;
                         text-align: center;
               line-height: 50px;
+              outline: none;
+              border: none;
                         background-color: #ffffff;
                  float: left;
                     }.buy{
@@ -265,7 +267,8 @@
                         margin-left: 16px;
                         color: #ffffff;
                           line-height: 50px;
-
+                        outline: none;
+                        border: none;
                         border-radius: 4px;
                         background: #e4e7ed !important;
                   float: left;

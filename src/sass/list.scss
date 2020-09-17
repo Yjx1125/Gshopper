@@ -7,11 +7,10 @@
 .main{
     width: 1349px;
     height: 1483px;
-    // background-color: pink;
     .main-content{
         width: 1285px;
         height: 1483px;
-        // background-color: palegreen;
+        // background-color: red;
         border: 1px solid transparent;
         margin: 0 auto;
         .main-nav{
@@ -19,45 +18,43 @@
             height:12px;
             margin: 40px 0;
             line-height: 12px;
-            // background-color: #fff;
             a{
                 font-size: 12px;
                 color: rgba(0,0,0,0.85);
             }
         }.main-details{
             width: 1285px;
-        
             height: 1483px;
-
-            // height:12px;
             .main-left{
                 width:270px;
                 height: 1483px;
                 float: left;
                 margin-right: 60px;
-        //    background-color: #FF5224;
                 .left-reset{
                     width: 270px;
                     height: 36px;
+                    outline: none;
                     background-color: #fff;
                     color: #FF5224;
                      border: 1px solid #FF5224;
                      font-size: 14px;
                      padding: 10px 14px;
                      text-align: center;
+                    //  input{
+                    //      border: none;
+                    //      outline: none;
+                    //  }
                 }.left-send{
                     width: 270px;
                     height: 28px;
                     line-height: 28px;
                   
                     input{
-                        // display: block;
                         width: 20px;
                         height: 20px;
                         float: left;
                     }
                     span{
-                        // display: block;
                         float: left;
                         padding-left: 10px;
                         color: #282828;
@@ -82,13 +79,12 @@
                         margin-left: 0;
                     }:last-child{
                         float:right;
-                        // margin-left: 180px;
                     }
                 }.left-slider{
                     width: 270px;
                     height:30px;
                     border: 1px solid transparent;
-                    // background-color: seagreen;
+
                     .a{
                         width: 250px;
                         margin-top: 15px;
@@ -185,7 +181,7 @@
                                         font-size: 8px;
                                         color: #FF5224;
                                         border-radius: 50%;
-                                     background-color: yellow;
+                                    //  background-color: yellow;
                                         border: 1px solid white;
                                         line-height: 20px;
                                         text-align: center;
@@ -202,7 +198,7 @@
                         margin: 0 auto;
                         color: rgba(0, 0, 0, 0.65);
                         cursor: pointer;
-                        background-color: #f5f5f5;
+                        // background-color: #f5f5f5;
                         border-radius: 12px;
                      }
                 }
@@ -216,8 +212,7 @@
                     width:955px;
                     // height: 1483px;
                     margin: 0 auto;
-                    // background: #f0f0f0;
-                    // border: 1px solid black;
+        
                     font-family: '微软雅黑';
                     position: relative;
                       .sort{
