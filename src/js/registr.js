@@ -1,19 +1,9 @@
-// $('.show_pass').click(function () {
-//     let pass_type = $('input.password').attr('type');
-
-//     if (pass_type === 'password') {
-//         $('input.password').attr('type', 'text');
-//         $('.show_pass').removeClass('glyphicon-eye-open').addClass('glyphicon-eye-close');
-//     } else {
-//         $('input.password').attr('type', 'password');
-//         $('.show_pass').removeClass('glyphicon-eye-close').addClass('glyphicon-eye-open');
-//     }
-// })
 $(function () {
     let flag = false;
     meth1();
     pwds();
     Sub();
+    verify_code();
     //方式一
     $(".methond1").click(function () {
         // $(this).css({ "color": "#ff5224" }).siblings("li").css({ "color": "black" });
@@ -74,12 +64,9 @@ function meth2() {
         $(this).css({ "color": "#ff5224" }).siblings("li").css({ "color": "black" });
         $(".detail1").css("display", "none").siblings(".detail2").css("display", "block");
         $(".details").css("height", "280px");
-    })
 
-    // $(".detail1 .emails").focus(function () {
-    //     $(this).css("borderColor", "#ff5224");
-    //     $(".detail1 label").css({ "top": "10px", "fontSize": "12px" });
-    // })
+
+    })
 
     // 电话聚焦
     $(".detail2 .phones").focus(function () {
@@ -141,8 +128,8 @@ function pwds() {
         $(".in").css("borderColor", "#dcdfe6");
         let str_pwd = $(this).val();
         if (str_pwd !== "") {
-            //判断密码是否合法密码(以字母开头，长度在6~18之间，只能包含字母、数字和下划线)：
-            let re_pwd = /^[a-zA-Z]\w{5,17}$/;
+            //判断密码是否合法密码(长度在5~17之间，只能包含字母、数字和下划线)：
+            let re_pwd = /^\w{5,17}$/;
             if (!re_pwd.test(str_pwd)) {
                 $(".p_pwd").text("密码命名不合法").css("display", "block");
                 return;
@@ -192,42 +179,47 @@ function pwds() {
 
 //注册按钮函数
 function Sub() {
-    console.log(111);
     $('.btn').click(function () {
         let uemail = $('#uemails').val();
         let upwd = $('#upwds').val();
-        console.log(uemail);
-        console.log(upwd);
-        /*
-            key :  users
-            value : 
-            '{
-                uname : upwd，
-                uname : upwd
-            }'
-        */
-        //获取cookie
-        let cookie_str = $.cookie('users') ? $.cookie('users') : '';
-        //转对象
-        let cookie_obj = $toObj(cookie_str);
-        console.log(151);
-        //判断用户是否存在 
-        if (uemail in cookie_obj) {
-            alert('用户已存在！');
-            return;
+        if (uemail !== "" && upwd !== "") {
+            //获取cookie
+            let cookie_str = $.cookie('users') ? $.cookie('users') : '';
+            //转对象
+            let cookie_obj = $toObj(cookie_str);
+            // console.log(151);
+            //判断用户是否存在 
+            if (uemail in cookie_obj) {
+                console.log(1547);
+                console.log(uemail);
+                alert('用户已存在！');
+                return;
+            }
+            //不存在，加入对象
+            cookie_obj[uemail] = upwd;
+            console.log(cookie_obj);
+            //存入cookie
+            $.cookie('users', JSON.stringify(cookie_obj), { expires: 7, path: '/' });
+            // alert('注册成功！');
+
         }
-        //不存在，加入对象
-        cookie_obj[uemail] = upwd;
-        //存入cookie
-        $.cookie('users', JSON.stringify(cookie_obj), { expires: 7, path: '/' });
-        // alert('注册成功！');
+
 
     })
-
-
-
-
 }
+
+
+//获取随机验证码
+function verify_code() {
+    $(".code").click(function () {
+        console.log(154);
+        let randoms = Math.floor(Math.random() * (9999 - 1000 + 1) + 1000);
+        $(this).text(randoms);
+        $(this).css("borderColor", "#ff5224");
+
+    })
+}
+
 
 
 

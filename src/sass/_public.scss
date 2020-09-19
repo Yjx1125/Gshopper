@@ -173,17 +173,17 @@ img {
 }
 //下右部
 .header_bottom .h_right{
-    width: 190px;
+    width: 210px;
     height: 24px;
     padding-left: 30px;
     margin-top: 30px;
     margin-bottom: 23px;
-    // background-color: red;
+    // background-color: pink;
     float: left;
 }
 .header_bottom .h_right .hfonts{
     font-size: 18px;
-    padding: 0 8px;
+    padding: 0 6px;
     
 }
 .header_bottom .h_right a{
@@ -192,6 +192,11 @@ img {
 }
 .header_bottom .h_right a:hover{
     color: #FF5224;
+}
+.header_bottom .h_right .carts-number{
+    font-size: 12px;
+    color: red;
+    padding-left: 3px;
 }
 
 
@@ -292,13 +297,14 @@ margin-top: 40px;
     color: rgba(0, 0, 0, 0.65);
     margin-bottom: 16px;
    }
-   .brands .brand1{
+  .brands .brand1{
        
        float: left;
        width: 66px;
        height: 20px;
        margin-right: 16px;
-       overflow: hidden;
+       background-color: red;
+    //    overflow: hidden;
    }
    .brands .brand1 img{
  display: block;
@@ -316,6 +322,17 @@ margin-top: 40px;
     margin: 0;
     padding-right: 12px;
 }
+// .brands .QRcode{
+//     position: relative;
+// }
+// .brands .QRcode #img3{
+//     width: 50px;
+//     height: 50px;
+//     position: absolute;
+//     top: 10px;
+//     left: 0;
+// }
+
 .brands .brand2 .img1{
 width: 32px;
 height: 33px;

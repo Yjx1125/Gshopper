@@ -1,8 +1,8 @@
 $('#re_sub').click(function () {
     let remails = $('.re #remails').val();
     let rpwd = $('.re #rpwds').val();
-    console.log(remails);
-    console.log(rpwd);
+    // console.log(remails);
+    // console.log(rpwd);
     let cookie_str = $.cookie('users') ? $.cookie('users') : '';
     let cookie_obj = $toObj(cookie_str);
     if (remails in cookie_obj) {

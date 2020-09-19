@@ -194,15 +194,21 @@
                                 float: left;
                                 margin-left: 30px;
                                 line-height: 26px;
+                              text-indent: 13px;
+                              cursor: pointer;
+                              outline: none;
+
                                 // background-color:red;
                             }
                             .r-number{
                                 width: 36px;
                                 height: 26px;
                                 float: left;
-                                // background-color:red;
+                                text-indent: 13px;
                                 margin-left: 30px;
                                 line-height: 26px;
+                                border: none;
+                                outline: none;
                             }
                             .r-add{
                                 width: 36px;
@@ -210,6 +216,12 @@
                                 float: left;
                                 margin-left: 30px;
                                 line-height: 26px;
+                              text-indent: 11px;
+                              cursor: pointer;
+                              outline: none;
+
+
+
                                 // background-color:red;
                             }
                         }
