@@ -50,6 +50,11 @@ img {
     height: 120px;
     padding:0 32px;
     border-bottom: 2px solid #ff5224;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background: white;
+    z-index: 500;
 }
 /* 版心 */
 .header-cotain{
@@ -303,7 +308,7 @@ margin-top: 40px;
        width: 66px;
        height: 20px;
        margin-right: 16px;
-       background-color: red;
+    //    background-color: red;
     //    overflow: hidden;
    }
    .brands .brand1 img{
